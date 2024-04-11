@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Siddharth Out</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fce8d5; /* light peach */
+            text-align: center;
+        }
+        header {
+            background-color: #ff6b6b; /* coral */
+            color: #fff;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff; /* white */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            padding: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333; /* dark gray */
+            font-size: 18px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        input[type="submit"] {
+            background-color: #ff6b6b; /* coral */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #ff8787; /* lighter coral */
+        }
+    </style>
+    <script>
+        function redirectToHappyPage() {
+            window.location.href = "happy.html";
+        }
+
+        function redirectToSamePage() {
+            window.location.href = "ask_siddharth_out.html";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Ask Siddharth Out ❤️</h1>
+    </header>
+    <div class="container">
+        <form action="#">
+            <label for="message">Hey Siddharth, would you like to go out on a date with me?</label>
+            <p>
+                <input type="radio" id="yes" name="response" value="yes" onclick="redirectToHappyPage()"> <label for="yes">Yes ❤️</label>
+                <input type="radio" id="no" name="response" value="no" onclick="redirectToSamePage()"> <label for="no">No 😔</label>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
